@@ -16,5 +16,5 @@ variable "region" {
 
 variable "application_name" {
   type        = string
-  description = "Resource name for billing purpose"
+  description = "Resource name for billing purposes"
 }
