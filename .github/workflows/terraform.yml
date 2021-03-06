@@ -33,6 +33,9 @@ jobs:
           # terraform_version: 0.14.7:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
+      - name: Open Terraform directory
+        run: cd terraform
+
       - name: Terraform Format
         id: fmt
         run: terraform fmt -check
@@ -101,6 +104,9 @@ jobs:
         with:
           # terraform_version: 0.14.7:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+
+      - name: Open Terraform directory
+        run: cd terraform
 
       - name: Terraform Format
         id: fmt
