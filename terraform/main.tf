@@ -6,6 +6,7 @@ module "website" {
 
   application_name = var.application_name
   environment      = var.environment
+  bucket_name      = "elroyantao.com"
 }
 
 # --------------------------------------
