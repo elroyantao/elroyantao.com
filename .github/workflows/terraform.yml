@@ -145,7 +145,7 @@ jobs:
       - name: Read SSM Parameters
         id: ssm_read
         run: |
-          website_s3_bucket=$(aws ssm get-parameter --name /PersonalWebsite/${{ env.environment }}/website_s3_bucket --query Parameter.Value --output text)
+          website_s3_bucket=$(aws ssm get-parameter --name /personalwebsite/prod/website_s3_bucket --query Parameter.Value --output text)
           echo "::set-output name=website_s3_bucket::$website_s3_bucket"
       - name: Run build
         run: yarn build
