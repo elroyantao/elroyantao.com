@@ -1,26 +1,24 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import Home from './Home'
 import Resume from './Resume'
 
 const Routes = () => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/resume">
-          <Resume />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+    <Switch>
+      <Route path="/resume">
+        <Resume />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
 
-        <Route>
-          {/* @todo: replace with 404 page */}
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+      <Route>
+        {/* @todo: replace with 404 page */}
+        <Home />
+      </Route>
+    </Switch>
   )
 }
 

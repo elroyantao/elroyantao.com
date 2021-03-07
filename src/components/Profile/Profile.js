@@ -13,8 +13,8 @@ const Profile = () => {
         />
       </div>
       <div>
-        <h2 className={styles.name}>Elroy Antao</h2>
-        <h4 className={styles.job}>Full-Stack Developer</h4>
+        <h2 className={styles.name}>Elroy Antão</h2>
+        <h4 className={styles.job}>Fullstack Developer</h4>
       </div>
     </div>
   )

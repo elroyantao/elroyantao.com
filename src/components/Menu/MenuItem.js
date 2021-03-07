@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import styles from './Menu.module.css'
 
@@ -16,10 +16,10 @@ const MenuItem = ({ title, link, Icon }) => {
 
   return (
     <li>
-      <a href={link} className={linkClass}>
+      <Link to={link} className={linkClass}>
         <Icon className={styles['menu-icon']} />
         <span className={styles['link-text']}>{title}</span>
-      </a>
+      </Link>
     </li>
   )
 }
