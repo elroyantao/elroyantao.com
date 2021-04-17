@@ -64,3 +64,18 @@ a {
     padding: 0;
   }
 }
+
+
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.white-space-50 {
+  padding-bottom: 50px;
+}

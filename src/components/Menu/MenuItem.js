@@ -26,7 +26,7 @@ const MenuItem = ({ title, link, Icon }) => {
 
 MenuItem.propTypes = {
   title: PropTypes.string.isRequired,
-  Icon: PropTypes.element.isRequired,
+  Icon: PropTypes.func.isRequired,
   link: PropTypes.string.isRequired
 }
 
